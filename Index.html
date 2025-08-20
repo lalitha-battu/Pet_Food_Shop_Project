@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Food Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🐾 PetFood Shop</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cart">Cart 🛒 (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Healthy & Delicious Pet Food</h1>
+    <p>Fresh, natural and tasty food for your lovely pets.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="https://static.toiimg.com/thumb/msid-93801947,imgsize-28032,width-400,resizemode-4/93801947.jpg" alt="Dog Food">
+        <h3>Dog Food</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Dog Food', 15)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://media.istockphoto.com/id/516207382/photo/beautiful-cat-licking-her-face-as-she-eats.jpg?s=612x612&w=0&k=20&c=gTbYx9f0M1acveLo0vS-7J2ujJrmI9Dm0A9TlNtj3SQ=" alt="Cat Food">
+        <h3>Cat Food</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Cat Food', 12)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61Uq7p3HjaL._UF1000,1000_QL80_.jpg" alt="Bird Food">
+        <h3>Bird Food</h3>
+        <p>$8</p>
+        <button onclick="addToCart('Bird Food', 8)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide the best quality pet food with natural ingredients that your pets will love.</p>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PetFood Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
